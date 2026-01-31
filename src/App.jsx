@@ -1,8 +1,8 @@
 import "./App.css";
 
-import ClientesPage from "./pages/clientes/ClientePage";
-import CreateClientePage from "./pages/clientes/CreateClientePage";
-import EditClientePage from "./pages/clientes/EditClientePage";
+import ClientePage from "./pages/Cliente/ClientePage";
+import CreateClientePage from "./pages/Cliente/CreateClientePage";
+import EditClientePage from "./pages/Cliente/EditClientePage";
 
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
 
         {/* Listar clientes */}
-        <Route path="/clientes" element={<ClientesPage />} />
+        <Route path="/clientes" element={<ClientePage/>} />
         {/* Crear cliente */}
         <Route path="/clientes/create" element={<CreateClientePage />} />
         {/* Editar cliente */}

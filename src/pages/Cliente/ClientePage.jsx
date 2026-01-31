@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-const ClientesPage = () => {
+const ClientePage = () => {
 
   const [clientes, setCliente] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -101,4 +101,4 @@ const ClientesPage = () => {
   );
 };
 
-export default ClientesPage;
+export default ClientePage;

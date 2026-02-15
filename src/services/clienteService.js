@@ -1,8 +1,16 @@
 import api from '../api/axiosInstance';
 
+export const getClientes = () => api.get('/cliente');
 
-export const getCliente = ()=> api.get('/clientes');
-export const getClienteById = (id)=> api.get(`/clientes/${id}`);
-export const createCliente = (clienteData)=> api.post('/clientes', clienteData);
-export const updateCliente = (id, clienteData)=> api.put(`/clientes/${id}`, clienteData);
-export const deleteCliente = (id)=> api.delete(`/clientes/${id}`);
+export const getClienteById = (id) => 
+  api.get(`/cliente/${id}`);
+
+export const createCliente = (clienteData) => 
+  api.post('/cliente', clienteData);
+
+export const updateCliente = (id, clienteData) => 
+  api.put(`/cliente/${id}`, clienteData);
+
+export const deleteCliente = (id) => 
+  api.delete(`/cliente/${id}`);
+

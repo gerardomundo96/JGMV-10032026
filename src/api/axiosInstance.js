@@ -1,11 +1,14 @@
-import axios from 'axios';
+import axios from "axios";
 
-
-const axiosInstance = axios.create({
-    baseURL: 'https://697a924a0e6ff62c3c59af46.mockapi.io',
-    timeout: 10000,
-    headers: {
-        'Content-Type': 'application/json',
-    },
+const api = axios.create({
+  baseURL: "https://699126956279728b0153e75c.mockapi.io/api/v1",
+  timeout: 10000,
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
-export default axiosInstance;
+
+export default api;
+
+
+
